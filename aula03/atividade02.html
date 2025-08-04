@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas condicionais e repetições</title>
+</head>
+<body>
+    <h1>Classificação de Lutadores</h1>
+    <script>
+        let contador = parseInt(prompt("Quantos lutadores deseja classificar?"));
+
+        for (let count = 0; count < contador; count++) {
+            let peso = parseFloat(prompt("Informe o peso do lutador " + (count + 1) + " em kg: "));
+
+            if (peso <= 40) {
+                alert("Você é peso pena.");
+            } else if (peso >= 41 && peso <= 60) {
+                alert("Você é peso mosca.");
+            } else {
+                alert("Você é peso pesado.");
+            }
+
+            console.log("Lutador " + (count + 1) + ": " + peso + " kg.");
+        }
+    </script>
+</body>
+</html>
